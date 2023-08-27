@@ -16,26 +16,14 @@ Before you begin, make sure you have the following prerequisites installed:
 1. Clone this repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/zakichan719/selenium_main.git
    ```
 
-2. Navigate to the repository's directory:
-
-   ```
-   cd your-repo
-   ```
+ 
 
 3. Open the `script.py` file in your preferred text editor.
 
-4. Replace `'https://zakichan.com/'` with the URL of the website you want to automate.
-
-5. Save the file.
-
-6. Run the script using the following command:
-
-   ```
-   python script.py
-   ```
+ 
 
 ## Explanation
 

@@ -1,4 +1,4 @@
-# Selenium Automation with undetected_chromedriver
+# Selenium Automation with undetected_chromedriver | headless mode
 
 This repository provides an example of using Selenium along with undetected_chromedriver for automating web browsing tasks.
 The combination of Selenium and undetected_chromedriver can help bypass certain detection mechanisms that websites might have in place.
@@ -50,7 +50,8 @@ options = uc.ChromeOptions()
 
 # Create a new undetected Chrome driver instance
 driver = uc.Chrome(use_subprocess=True)
-
+# Set headless mode 
+# options.add_argument('--headless') 
 # Add any necessary configurations to 'options' if required
 # options.add_experimental_option("detach", True)
 
@@ -64,12 +65,7 @@ driver.get('https://zakichan.com/')
 ## Note
 
 - The `undetected_chromedriver` library is used to provide an undetectable WebDriver instance. This can help avoid detection mechanisms that some websites employ to prevent automated access.
-- The script will open the specified URL after the sleep duration. Make sure to customize the script according to your requirements.
+- By enabling headless mode (--headless), the Chrome browser will run without a graphical user interface.
+  all lign >> options.add_argument('--headless')   
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
---- 
-
-Feel free to further customize this README to match your preferences and provide any additional information that you think would be useful for users of your repository.
+ 

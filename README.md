@@ -19,9 +19,7 @@ Before you begin, make sure you have the following prerequisites installed:
    git clone https://github.com/zakichan719/selenium_main.git
    ```
 
- 
-
-3. Open the `script.py` file in your preferred text editor.
+3. Open the `undetected_chromedriver.py` file in your preferred text editor.
 
  
 
@@ -38,16 +36,21 @@ options = uc.ChromeOptions()
 
 # Create a new undetected Chrome driver instance
 driver = uc.Chrome(use_subprocess=True)
-# Set headless mode 
+# Set headless mode  >> the Chrome browser will run without a graphical user interface.
 # options.add_argument('--headless') 
 # Add any necessary configurations to 'options' if required
-# options.add_experimental_option("detach", True)
+ 
 
 # Pause the script for 10 seconds
 sleep(10)
 
 # Open the specified URL using the Chrome driver
 driver.get('https://zakichan.com/')
+sleep(10)
+
+driver.quit()
+
+
 ```
 
 ## Note

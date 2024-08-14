@@ -11,6 +11,6 @@ driver = uc.Chrome(use_subprocess=True)
 sleep(10)
 
 # operate the driver as you would with selenium
-driver.get('https://zakichan.com/') 
+driver.get('https://google.com/') 
 sleep(10)
 driver.quit()

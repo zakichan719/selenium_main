@@ -19,7 +19,7 @@ Before you begin, make sure you have the following prerequisites installed:
    git clone https://github.com/zakichan719/selenium_main.git
    ```
 
-3. Open the `undetected_chromedriver.py` file in your preferred text editor.
+3. Open the `index.py` file in your preferred text editor.
 
  
 
@@ -45,7 +45,7 @@ driver = uc.Chrome(use_subprocess=True)
 sleep(10)
 
 # Open the specified URL using the Chrome driver
-driver.get('https://zakichan.com/')
+driver.get('https://google.com/')
 sleep(10)
 
 driver.quit()
